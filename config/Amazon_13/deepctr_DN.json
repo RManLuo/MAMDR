@@ -1,0 +1,53 @@
+{
+  "model": {
+    "name": "mlp_meta_domain_negotiation_finetune",
+    "norm": "none",
+    "dense": "dense",
+    "auxiliary_net": false,
+    "user_dim": 128,
+    "item_dim": 128,
+    "domain_dim": 128,
+    "auxiliary_dim": 128,
+    "hidden_dim": [
+      256,
+      128,
+      64
+    ],
+    "dropout": 0.5
+  },
+  "train": {
+    "load_pretrain_emb": false,
+    "emb_trainable": true,
+    "epoch": 99999,
+    "learning_rate": 0.001,
+    "meta_learning_rate": 0.1,
+    "shuffle_sequence": true,
+    "meta_sequence": "random",
+    "target_domain": -1,
+    "meta_train_step": 0,
+    "meta_finetune_step": 0,
+    "meta_split": "train-train",
+    "meta_split_ratio": 0.8,
+    "average_meta_grad": "none",
+    "meta_parms": [
+      "all"
+    ],
+    "result_save_path": "result",
+    "checkpoint_path": "checkpoint",
+    "loss": "binary_crossentropy",
+    "optimizer": "adam",
+    "patience": 3,
+    "val_every_step": 1,
+    "histogram_freq": 0,
+    "shuffle_buff_size": 10000
+  },
+  "dataset": {
+    "name": "Amazon",
+    "dataset_path": "dataset/Amazon",
+    "domain_split_path": "split_by_category_13",
+    "batch_size": 1024,
+    "shuffle_buffer_size": 10000,
+    "num_parallel_reads": 8,
+    "seed": 123
+  }
+}

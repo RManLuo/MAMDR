@@ -1,0 +1,45 @@
+{
+  "model": {
+    "name": "ple",
+    "norm": "none",
+    "dense": "dense",
+    "auxiliary_net": false,
+    "user_dim": 128,
+    "item_dim": 128,
+    "domain_dim": 128,
+    "auxiliary_dim": 128,
+    "hidden_dim": [
+      256
+    ],
+    "tower_hidden_dim": [
+      64
+    ],
+    "specific_expert_num": 10,
+    "shared_expert_num": 2,
+    "gate_dnn_hidden_units": [64],
+    "num_levels": 1,
+    "dropout": 0.5
+  },
+  "train": {
+    "load_pretrain_emb": true,
+    "emb_trainable": false,
+    "epoch": 99999,
+    "learning_rate": 0.0001,
+    "result_save_path": "result",
+    "checkpoint_path": "checkpoint",
+    "loss": "binary_crossentropy",
+    "optimizer": "adam",
+    "patience": 3,
+    "histogram_freq": 0,
+    "shuffle_buff_size": 10000
+  },
+  "dataset": {
+    "name": "Taobao",
+    "dataset_path": "dataset/Taobao",
+    "domain_split_path": "split_by_theme_10",
+    "batch_size": 1024,
+    "shuffle_buffer_size": 10000,
+    "num_parallel_reads": 8,
+    "seed": 123
+  }
+}

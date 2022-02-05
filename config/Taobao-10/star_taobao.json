@@ -1,0 +1,60 @@
+{
+  "model": {
+    "name": "star",
+    "norm": "pn",
+    "dense": "star",
+    "auxiliary_net": false,
+    "user_dim": 128,
+    "item_dim": 128,
+    "domain_dim": 128,
+    "auxiliary_dim": 64,
+    "hidden_dim": [
+      256,
+      128,
+      64
+    ]
+  },
+  "train": {
+    "load_pretrain_emb": true,
+    "emb_trainable": false,
+    "epoch": 99999,
+    "learning_rate": 0.001,
+    "meta_learning_rate": 0.1,
+    "domain_meta_learning_rate": 0.1,
+    "merged_method": "plus",
+    "sample_num": 5,
+    "add_query_domain": true,
+    "finetune_every_epoch": false,
+    "shuffle_sequence": true,
+    "meta_sequence": "random",
+    "target_domain": -1,
+    "domain_regulation_step": 0,
+    "meta_train_step": 0,
+    "meta_finetune_step": 0,
+    "meta_split": "train-train",
+    "meta_split_ratio": 0.8,
+    "average_meta_grad": "none",
+    "meta_parms": [
+      "emb",
+      "kernel_shared",
+      "bias_shared"
+    ],
+    "result_save_path": "result",
+    "checkpoint_path": "checkpoint",
+    "loss": "binary_crossentropy",
+    "optimizer": "adam",
+    "patience": 3,
+    "val_every_step": 1,
+    "histogram_freq": 0,
+    "shuffle_buff_size": 10000
+  },
+  "dataset": {
+    "name": "Taobao",
+    "dataset_path": "dataset/Taobao",
+    "domain_split_path": "split_by_theme_10",
+    "batch_size": 1024,
+    "shuffle_buffer_size": 10000,
+    "num_parallel_reads": 8,
+    "seed": 123
+  }
+}

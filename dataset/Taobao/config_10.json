@@ -1,0 +1,18 @@
+{
+  "theme_num": 10,
+  "raw_data_path": "raw_data",
+  "processed_data_path": "processed_data",
+  "rebuild": false,
+  "split_save_path": "split_by_theme_10",
+  "split_policy": "split_by_theme",
+  "seed": 123,
+  "cores": 8,
+  "ctr_ratio": 0.5,
+  "random_range": true,
+  "ctr_ratio_range": [0.2, 0.5],
+  "train_val_test": [
+    0.6,
+    0.2,
+    0.2
+  ]
+}

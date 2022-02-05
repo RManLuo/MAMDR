@@ -1,0 +1,7 @@
+dataset/Amazon/*.tar.gz
+dataset/Taobao/*.tar.gz
+dataset/Amazon/split_*
+dataset/Taobao/split_*
+checkpoint/*
+result/*
+*.pyc

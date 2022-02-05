@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "AMAZON FASHION",
+    "Appliances",
+    "All Beauty",
+    "Gift Cards",
+    "Magazine Subscriptions"
+  ],
+  "raw_data_path": "raw_data",
+  "processed_data_path": "processed_data",
+  "rebuild": false,
+  "redownload": false,
+  "split_save_path": "split_by_category",
+  "split_policy": "split_by_category",
+  "seed": 123,
+  "cores": 8,
+  "ctr_ratio": 0.5,
+  "train_val_test": [
+    0.6,
+    0.2,
+    0.1
+  ]
+}
