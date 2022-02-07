@@ -35,6 +35,7 @@ Enter `dataset/Taobao`
 4. run `split.py --config config_*.json` to create dataset.
 
 ## Preprocessed dataset
+You can download the datasets and extract the folders into `dataset/Amazon` and `dataset/Taobao`, respectively.
 * [Amazon-6/13](https://drive.google.com/file/d/1JpzaDZioLTlGMJdiLIvrP8m9ngOGe7dI/view?usp=sharing)
 * [Taobao-10/20/30](https://drive.google.com/file/d/1L-Y6KZ5-DWKYLspaLo0oxPAQ-MxUgIKe/view?usp=sharing)
 ## Run experiments
