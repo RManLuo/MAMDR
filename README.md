@@ -1,5 +1,5 @@
 # MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation
-
+Preprint Version: [MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation](https://arxiv.org/abs/2202.12524)
 ## Requirements
 ```text
 tensorflow-gpu==1.12.0
