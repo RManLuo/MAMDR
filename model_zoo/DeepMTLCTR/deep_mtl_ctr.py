@@ -117,7 +117,7 @@ class DeepMTLCTR(BaseModel):
                                    embeddings_initializer=tf.keras.initializers.Constant(embedding_matrix),
                                    embedding_name=emb_name, trainable=trainable)
         else:
-            emb_layer = SparseFeat(input_name, self.n_uid, self.model_config['user_dim'], embedding_name=emb_name)
+            emb_layer = SparseFeat(input_name, n, dim, embedding_name=emb_name)
         return emb_layer
 
     def separate_train_val_test(self, init_parms=True):
