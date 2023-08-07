@@ -1,8 +1,8 @@
 # MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation
 Official code implementation for ICDE 23 paper MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation.
 
-Preprint Version: [MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation](https://arxiv.org/abs/2202.12524)   
-[Slides](./ICDE-23-Slides-MAMDR.pdf)  
+[\[Paper\]](https://arxiv.org/abs/2202.12524)   
+[\[Slides\]](./ICDE-23-Slides-MAMDR.pdf)  
 ## Requirements
 ```text
 tensorflow-gpu==1.12.0
