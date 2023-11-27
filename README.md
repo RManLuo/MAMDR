@@ -52,7 +52,7 @@ python3 run.py --config config/Taobao-10/deepctr.json
 ``` python
 python3 run.py --config config/Taobao-10/deepctr_DN.json
 ```
-### Rune MAMDR
+### Run MAMDR
 ``` python
 python3 run.py --config config/Taobao-10/deepctr_DN+DR.json
 ```
